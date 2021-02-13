@@ -25,8 +25,7 @@ Four options are implemented. Default is option 3.<BR>
   3. SpO<sub>2</sub> = 1.5958422 <i>R</i><sup>2</sup> -34.6596622 <i>R</i> + 112.6898759 (Application note 6845, Maxim Integrated)<BR>
   4. SpO<sub>2</sub> = -45.060 <i>R</i><sup>2</sup> + 30.354 <i>R</i> + 94.845 (MAX3010x sensor library, SparkFun)<BR>
 where <i>R</i> = (AC<sub>red</sub> / DC<sub>red</sub>) / (AC<sub>ir</sub> / DC<sub>ir</sub>).<BR>
-<IMG alt=spo2models src="img/spo2plot.png"><BR>
-<a href="spo2models.xlsx">Excel file</A><BR>
+<IMG alt=spo2models src="img/spo2plot.png"> <a href="spo2models.xlsx">Excel file</A><BR>
 
 ## References 参考
 Reynolds et al. (1991) Br J Anaesth 67, 638-643. <a href="https://doi.org/10.1093/bja/67.5.638">DOI</A><BR>
