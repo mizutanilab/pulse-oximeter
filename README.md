@@ -33,3 +33,6 @@ Reynolds et al. (1991) Br J Anaesth 67, 638-643. <a href="https://doi.org/10.109
 Recommended Configurations and Operating Profiles for MAX30101/MAX30102 EV Kits, <a href="https://www.maximintegrated.com/en/design/technical-documents/userguides-and-manuals/6/6409.html">User guides & manuals 6409</a>, Maxim Integrated<BR>
 Guidelines for SpO2 Measurement Using the MaximR MAX32664 Sensor Hub, <a href="https://www.maximintegrated.com/en/design/technical-documents/app-notes/6/6845.html">Application note 6845</a>, Maxim Integrated<BR>
 MAX3010x sensor library, SparkFun. <a href="https://github.com/sparkfun/SparkFun_MAX3010x_Sensor_Library">GitHub</a><BR>
+
+## DISCLAIMER お断り
+This repository is provided "AS IS", without warranty of any kind, either express or implied. このリポジトリはこのままの形で提供されており、明示・暗示を問わず、いかなる保証も致しません。
