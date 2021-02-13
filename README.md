@@ -1,19 +1,19 @@
 # A pulse-oximeter using MAX30102 <BR>パルスオキシメーター MAX30102 使用
 
-## LCD
+## LCD 表示
 <IMG alt=LCD src="img/lcd01.png"> <IMG alt=MAX30102 src="img/max30102.png">
 <BR><BR><BR>
 
-## Schematic
+## Schematic 回路図
 <IMG alt=schematic src="img/schematic.png">
 <BR>
 
-## PCB
+## PCB 基板
 Gerber files are in preparation. ガーバーファイルは準備中です。<BR>
 <IMG alt=schematic src="img/pcb.png">
 <BR>
 
-## BOM
+## BOM 部品表
 Under construction. 準備中
 <BR><BR><BR>
 
