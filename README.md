@@ -2,7 +2,7 @@
 
 ## LCD
 <IMG alt=LCD src="img/lcd01.png"> <IMG alt=MAX30102 src="img/max30102.png">
-<BR><BR>
+<BR><BR><BR>
 
 ## Schematic
 <IMG alt=schematic src="img/schematic.png">
@@ -14,7 +14,7 @@
 
 ## BOM
 under construction
-<BR><BR>
+<BR><BR><BR>
 
 ## SpO<sub>2</sub> calculation 計算式
 Four options are implemented. Default is option 3.<BR>
