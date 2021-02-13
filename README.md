@@ -35,4 +35,4 @@ Guidelines for SpO2 Measurement Using the MaximR MAX32664 Sensor Hub, <a href="h
 MAX3010x sensor library, SparkFun. <a href="https://github.com/sparkfun/SparkFun_MAX3010x_Sensor_Library">GitHub</a><BR>
 
 ## DISCLAIMER お断り
-This repository is provided "AS IS", without warranty of any kind, either express or implied. このリポジトリはこのままの形で提供されており、明示・暗示を問わず、いかなる保証も致しません。
+This repository is provided "AS IS", without warranty of any kind, either express or implied. このリポジトリは「そのまま」で提供されており、明示・暗示を問わず、いかなる保証もありません。
