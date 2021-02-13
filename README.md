@@ -11,7 +11,7 @@
 ## PCB 基板
 Gerber files are in preparation. ガーバーファイルは準備中です。<BR>
 <IMG alt=schematic src="img/pcb.png">
-<BR>
+<BR><BR><BR>
 
 ## BOM 部品表
 Under construction. 準備中
