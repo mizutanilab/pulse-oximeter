@@ -2,7 +2,8 @@
 
 ## LCD 表示
 <IMG alt=LCD src="img/lcd01.png"> <IMG alt=MAX30102 src="img/max30102.png">
-<BR><BR><BR>
+<BR>
+Obviously, I'm alive. 明らかに生きてます。<BR><BR>
 
 ## Schematic 回路図
 <IMG alt=schematic src="img/schematic.png">
