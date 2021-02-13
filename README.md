@@ -7,13 +7,12 @@
 ## Schematic 回路図
 <IMG alt=schematic src="img/schematic.png">
 <BR>
+HT7733A is a step-up converter which outputs 3.3 V.<BR>
 
 ## PCB 基板
 Gerber files are in preparation. ガーバーファイルは準備中です。<BR>
 <IMG alt=schematic src="img/pcb.png">
-<BR>
-  HT7733A is a step-up converter which outputs 3.3 V.
-<BR><BR>
+<BR><BR><BR>
 
 ## BOM 部品表
 Under construction. 準備中
