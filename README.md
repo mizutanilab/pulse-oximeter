@@ -2,18 +2,22 @@
 
 ## LCD
 <IMG alt=LCD src="img/lcd01.png"> <IMG alt=MAX30102 src="img/max30102.png">
+<BR>
 
 ## Schematic
 <IMG alt=schematic src="img/schematic.png">
+<BR>
 
 ## PCB
 <IMG alt=schematic src="img/pcb.png">
+<BR>
 
 ## BOM
 under construction
+<BR>
 
 ## SpO<sub>2</sub> calculation 計算式
-Four options are implemented. Default is option 1.<BR>
+Four options are implemented. Default is option 3.<BR>
 4つあります。既定では3です。<BR>
   1. SpO<sub>2</sub> = -33.437 <i>R</i> + 114.9 (linear approximation of Reynolds et al. (1991) Br J Anaesth 67, 638)<BR>
   2. SpO<sub>2</sub> = -17 <i>R</i> + 104 (User guides & manuals 6409, Maxim Integrated)<BR>
@@ -21,6 +25,7 @@ Four options are implemented. Default is option 1.<BR>
   4. SpO<sub>2</sub> = -45.060 <i>R</i><sup>2</sup> + 30.354 <i>R</i> + 94.845 (MAX3010x sensor library, SparkFun)<BR>
 where <i>R</i> = (AC<sub>red</sub> / DC<sub>red</sub>) / (AC<sub>ir</sub> / DC<sub>ir</sub>).<BR>
 <IMG alt=spo2models src="img/spo2plot.png">
+<BR>
 
 ## References
 Reynolds et al. (1991) Br J Anaesth 67, 638-643. <a href="https://doi.org/10.1093/bja/67.5.638">DOI</A><BR>
