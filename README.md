@@ -9,7 +9,7 @@
 <BR>
 
 ## PCB
-Gerber files are in preparation. ガーバーファイルは準備中です。
+Gerber files are in preparation. ガーバーファイルは準備中です。<BR>
 <IMG alt=schematic src="img/pcb.png">
 <BR>
 
