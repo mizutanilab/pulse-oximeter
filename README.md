@@ -2,7 +2,7 @@
 
 ## LCD
 <IMG alt=LCD src="img/lcd01.png"> <IMG alt=MAX30102 src="img/max30102.png">
-<BR>
+<BR><BR>
 
 ## Schematic
 <IMG alt=schematic src="img/schematic.png">
@@ -14,7 +14,7 @@
 
 ## BOM
 under construction
-<BR>
+<BR><BR>
 
 ## SpO<sub>2</sub> calculation 計算式
 Four options are implemented. Default is option 3.<BR>
@@ -27,7 +27,7 @@ where <i>R</i> = (AC<sub>red</sub> / DC<sub>red</sub>) / (AC<sub>ir</sub> / DC<s
 <IMG alt=spo2models src="img/spo2plot.png">
 <BR>
 
-## References
+## References 参考
 Reynolds et al. (1991) Br J Anaesth 67, 638-643. <a href="https://doi.org/10.1093/bja/67.5.638">DOI</A><BR>
 Recommended Configurations and Operating Profiles for MAX30101/MAX30102 EV Kits, <a href="https://www.maximintegrated.com/en/design/technical-documents/userguides-and-manuals/6/6409.html">User guides & manuals 6409</a>, Maxim Integrated<BR>
 Guidelines for SpO2 Measurement Using the MaximR MAX32664 Sensor Hub, <a href="https://www.maximintegrated.com/en/design/technical-documents/app-notes/6/6845.html">Application note 6845</a>, Maxim Integrated<BR>
