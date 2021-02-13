@@ -9,11 +9,12 @@
 <BR>
 
 ## PCB
+Gerber files are in preparation. ガーバーファイルは準備中です。
 <IMG alt=schematic src="img/pcb.png">
 <BR>
 
 ## BOM
-under construction
+Under construction. 準備中
 <BR><BR><BR>
 
 ## SpO<sub>2</sub> calculation 計算式
