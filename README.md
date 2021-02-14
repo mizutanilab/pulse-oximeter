@@ -1,4 +1,4 @@
-# Pulse-oximeter using MAX30102 <BR>パルスオキシメーター MAX30102 使用
+# Pulse-oximeter using MAX30102, AAA battery-powered <BR>パルスオキシメーター MAX30102 使用，単４電池駆動
 
 ## LCD 表示
 <IMG alt=LCD src="img/lcd01.png"> <IMG alt=MAX30102 src="img/max30102.png">
