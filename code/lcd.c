@@ -1,6 +1,7 @@
 /*
  *	LCD interface
  *	LCD: ST7565R / AQM1248
+ *  2016-2021 (C) Mizutani Lab
  */
 
 #include	<htc.h>
@@ -79,6 +80,25 @@ void lcd_init(void) {
 	LCD_SCK_TRIS = 0;
 //config RB5 as output
 	LCD_CS_TRIS = 0;
+	//
+	lcd_write(0xAE, 0);//LCD off
+	lcd_write(0xA0, 0);//ADC normal
+	lcd_write(0xC8, 0);//Common output 0xC8:reverse 0xC0:normal(upside down)
+	lcd_write(0xA3, 0);//LCD bias 1/7
+	lcd_write(0x2C, 0);//power ctrl mode=4
+	wait2ms();
+	lcd_write(0x2E, 0);//power ctrl mode=6
+	wait2ms();
+	lcd_write(0x2F, 0);//power ctrl mode=7
+	lcd_write(0x23, 0);//resister ratio 3
+	lcd_write(0x81, 0);//set Vo volume
+	lcd_write(0x1C, 0);// volume=0x1c
+	lcd_write(0xA4, 0);//A4: not all-on; A5: all dots on
+	lcd_write(0x40, 0);//Display start line = 0
+	lcd_write(0xA6, 0);//Display polarity = normal
+	lcd_write(0xAF, 0);//LCD on
+	wait2ms();
+	lcd_clear();
 }
 
 void wait2ms(void) {//approx 2 msec at 32 MHz / PIC16F1825
@@ -155,81 +175,6 @@ void lcd_char_scale(char* cx, char* cy, char cdata, char cscale){
 	*cx += (cscale * 5 + 1);
 }
 
-void lcd_string(char* pcstr, char cinv) {
-    while (*pcstr) {lcd_char(*pcstr++, cinv);}
-}
-
-void lcd_string_scale(char* cx, char* cy, char* pcstr, char cscale) {
-    while (*pcstr) {lcd_char_scale(cx, cy, *pcstr++, cscale);}
-}
-
-void lcd_printHex(unsigned int iout, char idigit) {
-	char buf;
-	signed char i;
-	for (i=3; i>=0; i--) {
-		buf = (iout >> (i * 4)) & 0x000f;
-		if (buf < 10) buf += 0x30; else buf += 0x37;
-		if (i < idigit) lcd_char(buf, 0);
-	}
-}
-
-void lcd_printDec2(unsigned char cout, char cinv) {
-	//char 8 bit ==> 2 decimal digits
-	char buf0, buf1;
-	buf0 = cout / 10;
-	buf1 = cout - buf0 * 10;
-	lcd_char(buf0 + 0x30, cinv);
-	lcd_char(buf1 + 0x30, cinv);
-}
-
-void lcd_printDec3(unsigned char cout) {
-	//char 8 bit ==> 3 decimal digits
-	char buf0, buf1, buf2;
-	buf0 = cout / 100; 
-	buf1 = cout/10 - buf0 * 10; 
-	buf2 = cout - buf1 * 10 - buf0 * 100;
-	buf0 += 0x30; if (buf0 == 0x30) buf0 = 0x3a;
-	buf1 += 0x30; if ((buf0 == 0x3a)&&(buf1 == 0x30)) buf1 = 0x3a;
-	lcd_char(buf0, 0);
-	lcd_char(buf1, 0);
-	lcd_char(buf2 + 0x30, 0);
-}
-
-void lcd_printDec3scale(char* cx, char* cy, unsigned char cout, unsigned char cscale) {
-	//char 8 bit ==> 3 decimal digits
-	char buf0, buf1, buf2;
-	buf0 = cout / 100; 
-	buf1 = cout/10 - buf0 * 10; 
-	buf2 = cout - buf1 * 10 - buf0 * 100;
-	buf0 += 0x30; if (buf0 == 0x30) buf0 = 0x3a;
-	buf1 += 0x30; if ((buf0 == 0x3a)&&(buf1 == 0x30)) buf1 = 0x3a;
-	lcd_char_scale(cx, cy, buf0, cscale);
-	lcd_char_scale(cx, cy, buf1, cscale);
-	lcd_char_scale(cx, cy, buf2 + 0x30, cscale);
-}
-
-void lcd_printDec5(unsigned int iout, int* pidigit, char csel) {
-	//char 8 bit ==> 5 decimal digits
-	int i;
-	int idiv = 10000;
-	int iomit = 1;
-	*pidigit = 0;
-	for (i=0; i<5; i++) {
-		char buf0 = iout / idiv;
-		char cinv  = (csel == i) ? 1 : 0;
-		if (iomit && (i != 4)) {
-			if (buf0) {lcd_char(buf0 + 0x30, cinv); iomit = 0; (*pidigit)++;}
-			else lcd_char(' ', cinv);
-		} else {
-			lcd_char(buf0 + 0x30, cinv);
-			(*pidigit)++;
-		}
-		if (i==4) break;
-		iout = iout - buf0 * idiv;
-		idiv /= 10;
-	}
-}
-
 void lcd_clear(void){
 	unsigned char i,j;
 	wait2ms();
@@ -242,5 +187,3 @@ void lcd_clear(void){
 		}
 	}
 }
-
-
