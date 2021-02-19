@@ -31,7 +31,8 @@ Gerber files are in preparation. ガーバーファイルは準備中です。<B
 <tr><td>R</td><td>1k ohm</td><td>-</td><td>1</td></tr>
 <tr><td>SW</td><td>3p toggle</td><td>-</td><td>1</td></tr>
 <tr><td>Battery box</td><td>AAA x 2</td><td>-</td><td>1</td></tr>
-<tr><td>Pin header</td><td>6 pin</td><td>-</td><td>1</td></tr>
+<tr><td>Pin header</td><td>6 pin (ICSP)</td><td>-</td><td>1</td></tr>
+<tr><td>Pin header</td><td>7 pin (LCD) or 4 pin (OLED)</td><td>-</td><td>1</td></tr>
 <tr><td>PCB</td><td>custom</td><td>-</td><td>1</td></tr>
 <tr><td>Nuts & bolts</td><td>M3 x 12 mm</td><td>-</td><td>4 sets</td></tr>
 <tr><td>Nuts & bolts</td><td>M3 x 6 mm</td><td>-</td><td>1-2 sets</td></tr>
