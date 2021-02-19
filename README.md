@@ -6,7 +6,7 @@
 Obviously, I'm alive. 明らかに生きてます。<BR><BR>
 
 ## Schematic 回路図
-Nothing special.<BR>
+Nothing special. 普通です。<BR>
 <IMG alt=schematic src="img/schematic.png">
 <BR><BR><BR>
 
@@ -40,7 +40,7 @@ Gerber files are in preparation. ガーバーファイルは準備中です。<B
 </table>
 It's less than 25 US$ in total. MAX30102 breakout board with a 1.8V regulator is available from Maxim (MAXREFDES117#) and also from 3rd parties. MAX30101 board can also be used. There are two display options: OLED with SSD1306 and LCD AQM1248A with ST7565R. Choose one of them using #define directive. HEX binary for each display is available. HT7733A is a DC/DC step-up converter, which can be substituted with TPS613221ADBV, TPS61097A-33DBV, MAX1724EZK33, or XC9142B33CMR-G. Surface mount pads for these devices are prepared, but not tested. If you use the substitute converter, L/C arrangements and their constants should also be changed accroding to datasheets. You may need tools, such as PIC programmer.<BR>
 全部で2500円いきません。MAX30102ボードはMaximのMAXREFDES117#などいくつかの種類が入手可能です。MAX30101のでも使えます。ディスプレイは、秋月グラフィックLCDか、SSD1306のOLEDを選べます。ソースコードの#define文で設定してください。HEXファイルはどちらも用意しています。おもて面のパッドはTPS613221ADBVなどHT7733Aの代替品用で、SOTパッケージのHT7733Aには使えません。センサはアマゾンで、それ以外は秋月で手に入ります。別途PICプログラマーなどのツールも必要です。
-<BR><BR><BR>
+<BR>
 
 ## SpO<sub>2</sub> calculation 計算式
 Four options are implemented. Default is option 3.<BR>
