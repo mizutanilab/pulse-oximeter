@@ -1,7 +1,9 @@
 # Pulse-oximeter using MAX30102, AAA battery-powered <BR><BR>パルスオキシメーター MAX30102 使用，単４電池駆動
 
-## LCD 表示
-<IMG alt=LCD src="img/lcd01.png"> <IMG alt=MAX30102 src="img/max30102.png">
+<IMG alt=overall src="img/overall.png">
+  
+## Display 表示
+<IMG alt=LCD src="img/lcd01.png"> <IMG alt=OLED src="img/oled.png">
 <BR>
 Obviously, I'm alive. 明らかに生きてます。<BR><BR>
 
@@ -11,8 +13,9 @@ Nothing special. 普通です。<BR>
 <BR><BR><BR>
 
 ## PCB 基板
-Gerber files are in preparation. ガーバーファイルは準備中です。<BR>
-<IMG alt=schematic src="img/pcb.png">
+Gerber files are <A href="gerber/">here</a>. ガーバーファイルは<a href="gerber/">ここ</a>です。<BR>
+<IMG alt=pcb src="img/pcb.png">
+<IMG alt=pcb_picture src="img/pcbpic.png">
 <BR><BR><BR>
 
 ## BOM 部品表
@@ -35,7 +38,7 @@ Gerber files are in preparation. ガーバーファイルは準備中です。<B
 <tr><td>Pin header</td><td>7 pin (LCD) or 4 pin (OLED)</td><td>-</td><td>1</td></tr>
 <tr><td>PCB</td><td>custom</td><td>-</td><td>1</td></tr>
 <tr><td>Nuts & bolts</td><td>M3 x 12 mm</td><td>-</td><td>4 sets</td></tr>
-<tr><td>Nuts & bolts</td><td>M3 x 6 mm</td><td>-</td><td>1-2 sets</td></tr>
+<tr><td>Nuts & bolts</td><td>M2.6 x 6 mm</td><td>-</td><td>1-2 sets</td></tr>
 <tr><td>Spacer</td><td>3 mm x 3 mm height, resin</td><td>-</td><td>4</td></tr>
 <tr><td>Enclosure</td><td>85.5 x 59 x 24 mm, ABS</td><td>Akizuki</td><td>1</td></tr>
 </table>
@@ -44,8 +47,8 @@ It's less than 25 US$ in total. MAX30102 breakout board with a 1.8V regulator is
 <BR>
 
 ## SpO<sub>2</sub> calculation 計算式
-Four options are implemented. Default is option 3.<BR>
-4つあります。既定では3です。<BR>
+Four options are implemented. Default is option 1.<BR>
+4つあります。既定では1です。<BR>
   1. SpO<sub>2</sub> = -33.437 <i>R</i> + 114.9 (linear approximation of Reynolds et al. (1991) Br J Anaesth 67, 638)<BR>
   2. SpO<sub>2</sub> = -17 <i>R</i> + 104 (User guides & manuals 6409, Maxim Integrated)<BR>
   3. SpO<sub>2</sub> = 1.5958422 <i>R</i><sup>2</sup> -34.6596622 <i>R</i> + 112.6898759 (Application note 6845, Maxim Integrated)<BR>
