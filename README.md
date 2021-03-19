@@ -37,7 +37,7 @@ Gerber files are <A href="gerber/">here</a>. ガーバーファイルは<a href=
 <tr><td>Pin header</td><td>6 pin (ICSP)</td><td>-</td><td>1</td></tr>
 <tr><td>Pin header & jumper</td><td>2 pin</td><td>-</td><td>1 each</td></tr>
 <tr><td>Pin socket</td><td>7 pin (LCD) or 4 pin (OLED)</td><td>-</td><td>1</td></tr>
-<tr><td>Pin socket</td><td>4 pin (MAX30102)</td><td>-</td><td>1-2</td></tr>
+<tr><td>Pin socket</td><td>4 pin (MAX30102 board)</td><td>-</td><td>1-2</td></tr>
 <tr><td>PCB</td><td>custom</td><td>-</td><td>1</td></tr>
 <tr><td>Nuts & bolts</td><td>M3 x 10 mm</td><td>-</td><td>4 sets</td></tr>
 <tr><td>Nuts & bolts</td><td>M2.6 x 6 mm</td><td>-</td><td>1-2 sets</td></tr>
