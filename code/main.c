@@ -446,9 +446,9 @@ void main(void){
 				fRed = 0;
 				for (uc_i=0; uc_i<DIM_STORE; uc_i++) {fRed += fR[uc_i];}
 				fRed /= DIM_STORE;
-				//ucSum = (unsigned char)(-33.437 * fRed + 114.9);//linear approx of Reynolds et al. (1991) Br J Anaesthesia 67, 638-643.
+				ucSum = (unsigned char)(-33.437 * fRed + 114.9);//linear approx of Reynolds et al. (1991) Br J Anaesthesia 67, 638-643.
 				//ucSum = (unsigned char)(-17. * fRed + 104.);//Recommended Configurations and Operating Profiles for MAX30101/MAX30102 EV Kits
-				ucSum = (unsigned char)(1.5958422 * fRed * fRed -34.6596622 * fRed + 112.6898759);//Guidelines for SpO2 Measurement Using the MaximR MAX32664 Sensor Hub
+				//ucSum = (unsigned char)(1.5958422 * fRed * fRed -34.6596622 * fRed + 112.6898759);//Guidelines for SpO2 Measurement Using the MaximR MAX32664 Sensor Hub
 				//ucSum = (unsigned char)(-45.060 * fRed * fRed + 30.354 * fRed + 94.845);// https://github.com/sparkfun/SparkFun_MAX3010x_Sensor_Library/blob/master/src/spo2_algorithm.cpp
 				uc_x = 16; uc_y = 3;
 				disp_dec3scale(&uc_x, &uc_y, ucSum, 3);
