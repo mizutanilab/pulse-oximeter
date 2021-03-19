@@ -10,13 +10,13 @@ Obviously, I'm alive. 明らかに生きてます。<BR><BR>
 ## Schematic 回路図
 Nothing special. 普通です。<BR>
 <IMG alt=schematic src="img/schematic.png">
-<BR><BR><BR>
+<BR><BR>
 
 ## PCB 基板
 Gerber files are <A href="gerber/">here</a>. ガーバーファイルは<a href="gerber/">ここ</a>です。<BR>
 <IMG alt=pcb src="img/pcb.png">
 <IMG alt=pcb_picture src="img/pcbpic.png">
-<BR><BR><BR>
+<BR><BR>
 
 ## BOM 部品表
 <table>
@@ -32,12 +32,14 @@ Gerber files are <A href="gerber/">here</a>. ガーバーファイルは<a href=
 <tr><td>C</td><td>22 uF electrolytic</td><td>-</td><td>1</td></tr>
 <tr><td>C</td><td>0.1 uF ceramic</td><td>-</td><td>1</td></tr>
 <tr><td>R</td><td>1k ohm</td><td>-</td><td>1</td></tr>
-<tr><td>SW</td><td>3p toggle</td><td>-</td><td>1</td></tr>
+<tr><td>SW</td><td>3p toggle or alternate push</td><td>-</td><td>1</td></tr>
 <tr><td>Battery box</td><td>AAA x 2</td><td>-</td><td>1</td></tr>
 <tr><td>Pin header</td><td>6 pin (ICSP)</td><td>-</td><td>1</td></tr>
-<tr><td>Pin header</td><td>7 pin (LCD) or 4 pin (OLED)</td><td>-</td><td>1</td></tr>
+<tr><td>Pin header & jumper</td><td>2 pin</td><td>-</td><td>1 each</td></tr>
+<tr><td>Pin socket</td><td>7 pin (LCD) or 4 pin (OLED)</td><td>-</td><td>1</td></tr>
+<tr><td>Pin socket</td><td>4 pin (MAX30102)</td><td>-</td><td>1-2</td></tr>
 <tr><td>PCB</td><td>custom</td><td>-</td><td>1</td></tr>
-<tr><td>Nuts & bolts</td><td>M3 x 12 mm</td><td>-</td><td>4 sets</td></tr>
+<tr><td>Nuts & bolts</td><td>M3 x 10 mm</td><td>-</td><td>4 sets</td></tr>
 <tr><td>Nuts & bolts</td><td>M2.6 x 6 mm</td><td>-</td><td>1-2 sets</td></tr>
 <tr><td>Spacer</td><td>3 mm x 3 mm height, resin</td><td>-</td><td>4</td></tr>
 <tr><td>Enclosure</td><td>85.5 x 59 x 24 mm, ABS</td><td>Akizuki</td><td>1</td></tr>
@@ -53,7 +55,7 @@ Four options are implemented. Default is option 1.<BR>
   2. SpO<sub>2</sub> = -17 <i>R</i> + 104 (User guides & manuals 6409, Maxim Integrated)<BR>
   3. SpO<sub>2</sub> = 1.5958422 <i>R</i><sup>2</sup> -34.6596622 <i>R</i> + 112.6898759 (Application note 6845, Maxim Integrated)<BR>
   4. SpO<sub>2</sub> = -45.060 <i>R</i><sup>2</sup> + 30.354 <i>R</i> + 94.845 (MAX3010x sensor library, SparkFun)<BR>
-where <i>R</i> = (AC<sub>red</sub> / DC<sub>red</sub>) / (AC<sub>IR</sub> / DC<sub>IR</sub>).<BR>
+where <i>R</i> = (AC<sub>red</sub> / DC<sub>red</sub>) / (AC<sub>IR</sub> / DC<sub>IR</sub>).<BR><BR>
 <IMG alt=spo2models src="img/spo2plot.png"> <a href="spo2models.xlsx">Excel file</A><BR>
 
 ## References 参考
