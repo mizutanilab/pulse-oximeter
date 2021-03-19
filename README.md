@@ -1,5 +1,5 @@
 # Pulse-oximeter using MAX30102, AAA battery-powered <BR><BR>パルスオキシメーター MAX30102 使用，単４電池駆動
-
+Of course, it's home brewed. もちろん自作です。<br>
 <IMG alt=overall src="img/overall.png">
   
 ## Display 表示
@@ -24,7 +24,7 @@ Gerber files are <A href="gerber/">here</a>. ガーバーファイルは<a href=
 <tr><td>Sensor</td><td>MAX30102 breakout</td><td>Maxim Integrated, etc</td><td>1</td></tr>
 <tr><td>MCU</td><td>PIC16F1825-I/P</td><td>Microchip</td><td>1</td></tr>
 <tr><td>Display</td><td>OLED with SSD1306<BR>or AQM1248A</td><td>Sunhokey, etc<BR>Akizuki</td><td>1</td></tr>
-<tr><td>3V3 step-up conv</td><td>HT7733A (TO-92)<BR>or TPS613221ADBV, etc</td><td>Holtek<BR>TI</td><td>1</td></tr>
+<tr><td>3V3 boost conv</td><td>HT7733A (TO-92)<BR>or TPS613221ADBV, etc</td><td>Holtek<BR>TI</td><td>1</td></tr>
 <tr><td>Schottkey D</td><td>SD103A</td><td>PANJIT or Vishay</td><td>2</td></tr>
 <tr><td>Piezo speaker</td><td>PKM13EPYH4000-A0</td><td>muRata</td><td>1</td></tr>
 <tr><td>L</td><td>100 uH</td><td>-</td><td>1</td></tr>
@@ -42,7 +42,7 @@ Gerber files are <A href="gerber/">here</a>. ガーバーファイルは<a href=
 <tr><td>Spacer</td><td>3 mm x 3 mm height, resin</td><td>-</td><td>4</td></tr>
 <tr><td>Enclosure</td><td>85.5 x 59 x 24 mm, ABS</td><td>Akizuki</td><td>1</td></tr>
 </table>
-It's less than 25 US$ in total. MAX30102 breakout board with a 1.8V regulator is available from Maxim (MAXREFDES117#) and also from 3rd parties. MAX30101 board can also be used. There are two display options: OLED with SSD1306 and LCD AQM1248A with ST7565R. Choose one of them using #define directive. HEX binary for each display is available. HT7733A is a DC/DC step-up converter, which can be substituted with TPS613221ADBV, TPS61097A-33DBV, MAX1724EZK33, or XC9142B33CMR-G. Surface mount pads for these devices are prepared, but not tested. If you use the substitute converter, L/C arrangements and their constants should also be reexamined accroding to datasheets. You may need tools, such as PIC programmer.<BR>
+It's less than 25 US$ in total. MAX30102 breakout board with a 1.8V regulator is available from Maxim (MAXREFDES117#) and also from 3rd parties. MAX30101 board can also be used. There are two display options: OLED with SSD1306 and LCD AQM1248A with ST7565R. Choose one of them using #define directive. HEX binary for each display is available. HT7733A is a DC/DC boost converter, which can be substituted with TPS613221ADBV, TPS61097A-33DBV, MAX1724EZK33, or XC9142B33CMR-G. Surface mount pads for these devices are prepared, but not tested. If you use a substitute converter, L/C arrangements and their constants should also be reexamined accroding to datasheet recommendations. You may need tools, such as PIC programmer.<BR><BR>
 全部で2500円いきません。MAX30102ボードはMaximのMAXREFDES117#などいくつかの種類が入手可能です。MAX30101のでも使えます。ディスプレイは、秋月グラフィックLCDか、SSD1306のOLEDを選べます。ソースコードの#define文で設定してください。HEXファイルはどちらも用意しています。おもて面のパッドはTPS613221ADBVなどHT7733Aの代替品用で、SOTパッケージのHT7733Aには使えません。センサはアマゾンで、それ以外は秋月で手に入ります。別途PICプログラマーなどのツールも必要です。
 <BR>
 
